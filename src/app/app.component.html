@@ -1,8 +1,24 @@
 <!--The content below is only a placeholder and can be replaced.-->
+
+
+
 <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
   </h1>
 </div>
 
-<router-outlet></router-outlet>
+<div class="row">
+  <div class="col-md-6">
+    <ul class="list-unstyled">
+      <li class="list-item"><a routerLink="/a">goto A</a></li>
+      <li class="list-item"><a routerLink="/b">goto B</a></li>
+    </ul>
+  </div>
+  <div class="col-md-6">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+
+

@@ -108,6 +108,7 @@ module.exports = (_env, options) => {
         // COMPONENT styles
         {
           test: /\.component\.scss$/i,
+          
           exclude: /node_modules/,
           use: [
             'to-string-loader',
